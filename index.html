@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>254beauty</title>
+    <link rel="stylesheet href="css/style.css">
+    <script scr="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="cointainer">
+            <nav>
+                <img scr="imagess/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our work</a></li>
+                    <li><a href="#">Contact</a></li>                   
+                </ul>
+            </nav>
+           <div class="header-text">
+            <p> Hello, this is 254beauty</p>
+            <h1>Where beauty meets <span>eternity</span> <br>in a timelesss embrace.</h1>
+           </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="imagess/S1.png">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About us</h1> 
+                <p> Welcome to 254beauty, where beauty blossoms and confidence radiates!Nestled in the heart of Mombasa road,254 is a santuary dedicated to enhancing your natural allure and empoering your inner glow.With team of skilled stylists and skincare experts, we curate personilized experiences that cater your unique beauty needs.Discover your beauty oasis at 254beauty, where every visit leaves you feeling refreshed renewed and beautifully you.</p>
+
+                
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="services">
+    <div class ="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Hair styling</h2>
+                <p>From precision cuts to intricate braiding and coloring techniques,we tailor our services to suit your unique stle and preferences.</p>
+                
+            </div>
+            <div>
+                <h2>SkinCare Treatment</h2>
+               <p>our range of facial treatment,personilized to address various skin concerns,harnesss the power of premiu products and expert techniques to leave your skin glowing and refreshed.</p>                 
+               
+            </div>
+            <div>
+                <h2>Massage Therapy</h2>
+                <p>Immerse your yourself in relaxation and rejuvenation within our serene atmosphere as our massages not only soothe your body but also promote overall well-being and a sense of balance.</p>
+               </div>
+        </div>
+        </div>
+</div>
+
+<div id="products">
+    <div class ="container">
+        <h1 class="sub-title">Our work</h1>
+        <div class="work-list">
+            <div class="work">
+            <img src="imagess/m2.png">
+            <div class="layer">
+                <h3>Tennesse client </h3>
+                <p>254 has been a game changer</p>
+            </div>
+            </div>
+            <div class="work">
+                <div class="layer">
+                    <h3>South African client </h3>                  
+                   <p>I felt like royalty during my visit</p>
+                </div>
+                
+                <img src="imagess/m1.png">
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <h3>Tennesse client </h3>
+                        <p>I walked out feeling like a queen</p>
+                    </div>
+                    <img src="imagess/S4.png">
+                    </div>
+        
+        </div>
+      <a href="#" class="btn">See more</a>
+</div>
+
+
+
+<div id="Contact">
+    <div class="cointainer">
+        <div class="row">
+           <div class ="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p><i class=fas fa-paper-plane></i>contact@254beauty</p>
+            <p>6152298877</p>
+            <div class="Social-icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                 </div>
+           </div>   
+           <div class="Contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email"placeholder=" Your Email"required>
+                <textarea name="Message"rows="6"placeholder="Your Message"></textarea>
+                <button type"submit" class="btn btn2">Submit</button>
+
+           </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+   <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+    
+                function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+               for(tabcontent of tabcontents){
+                tablink.classlist.remove("active-tab");
+                        }
+                        event.currentTarget.classlist.add("active-link");
+                        document.getElementById(tabname).classlist.add("active-tab");
+        }
+      
+    </script>
+    
+
+    <style>
+        *{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background: #080808;
+    color:#ffffff;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image:url(imagess/S6.png);
+        background-size: cover;
+        background-position: center;
+   
+    }
+    .container{
+        padding:10px 10%;
+    }
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width:140px
+    }
+    nav  ul li{
+        display: inline-block;
+        list-style:none;
+        margin:10px 20px;
+    }
+nav ul li a{
+    color:#2b5703;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 1000;
+    position:relative;
+}
+  nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+  }    
+  nav ul li a:hover::after{
+    width:100%
+  }
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:#ff004f;
+}
+#about{
+    padding: 60px 0;
+    color:#ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis:35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#ffffff
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style:none ;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size:14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-content.active-tab{
+   display: block; 
+}
+
+
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+   display:grid; 
+   grid-template-columns:repeat(auto-fit,minimax(250px,1fr));
+   grid-gap:40px;
+   margin-top:50px;}
+.service-list div{
+    background:#ff004f;
+    padding: 40px;
+    font-size:13px;
+    font-weight:300;
+    border-radius:10px;
+    transition: background 0.5s,transform 0.5s;
+}
+.service-list div i{
+font-size: 50px;
+margin-bottom:30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration:none ;
+    color:#fff;
+    font-size: 12px;
+    margin-top:20px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background:#ff004f;
+    transform: translateY(-10PX);
+}
+ 
+#products{
+    padding: 50px 0;
+}
+.work-list{
+    display:grid; 
+   grid-template-columns:repeat(auto-fit,minimax(250px,1fr));
+   grid-gap:40px;
+   margin-top:50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding:0 40px;
+    text-align:center;
+    font-size:14px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight:500;
+    margin-bottom:20px;
+}
+.layer a{
+    margin-top:20px;
+    color:#ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height:60px;
+    background:#fff;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+   transform: scale(1.1); 
+}
+.work:hover.layer{
+    height:100%
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border:1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius:6px;
+    text-decoration: none;
+    color: #fff;
+    transition:background 0.5s;
+
+}
+.btn:hover{
+    background:#ff004f;
+
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+    }
+    .contact-right{
+        flex-basis:60%;
+    }
+.contact-left p{
+    margin-top:30px;
+}
+.btn.btn2{
+    display:inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width:100% 
+}
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding:15px;
+    margin:15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form.btn2{
+    padding:14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+}
+      
+    </style>
+
+
+
+    
+</body>
+</html>
